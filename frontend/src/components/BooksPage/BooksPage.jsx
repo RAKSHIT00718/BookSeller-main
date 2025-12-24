@@ -13,13 +13,14 @@ const BooksPage = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const searchFromURL = queryParams.get("search") || "";
+  const categoryFromURL = queryParams.get("category") || "";
 
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState(searchFromURL);
   const [sortBy, setSortBy] = useState("title");
-  const [filterCategory, setFilterCategory] = useState("all");
+  const [filterCategory, setFilterCategory] = useState(categoryFromURL || "all");
 
   // Fetch books from backend
   useEffect(() => {

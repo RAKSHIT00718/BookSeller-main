@@ -177,6 +177,33 @@ const books = [
 
 export default books;
 
+export const categories = [
+  {
+    id: 1,
+    title: "The Midnight Library",
+    author: "Matt Haig",
+    description: "Between life and death there is a library, and within that library, the shelves go on forever.",
+    image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop",
+    route: "/books?category=The Midnight Library"
+  },
+  {
+    id: 2,
+    title: "Ancient Chronicles",
+    author: "Lirael Morningstar",
+    description: "Discover the secrets of ancient civilizations through their own words.",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+    route: "/books?category=Ancient Chronicles"
+  },
+  {
+    id: 3,
+    title: "Coffee & Pages",
+    author: "Evelyn Pagewright",
+    description: "A collection of short stories perfect for your morning coffee ritual.",
+    image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=300&fit=crop",
+    route: "/books?category=Coffee & Pages"
+  }
+];
+
 export const branches = [
   {
     city: "Kurunegala",

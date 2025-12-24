@@ -29,6 +29,9 @@ app.use(cors({
       'http://localhost:5177',
       'http://localhost:5178',
       'http://localhost:5179',
+      'http://localhost:5180',
+      'http://localhost:5181',
+      'http://localhost:5182',
     ];
     // Allow common Vite dev ports to fix CORS when frontend auto-shifts ports.
     if (!origin || allowedOrigins.includes(origin)) {
