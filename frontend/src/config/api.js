@@ -9,5 +9,6 @@ console.log('🔧 API Configuration Debug:');
 console.log('VITE_API_URL:', import.meta.env.VITE_API_URL);
 console.log('BASE_URL:', API_CONFIG.BASE_URL);
 console.log('API_URL:', API_CONFIG.API_URL);
+console.log('Environment check:', import.meta.env.MODE);
 
 export default API_CONFIG;
