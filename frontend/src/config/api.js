@@ -1,14 +1,13 @@
-// API Configuration
+// API Configuration - Temporary hardcoded for testing
 const API_CONFIG = {
-  BASE_URL: import.meta.env.VITE_API_URL || 'http://localhost:4000',
-  API_URL: (import.meta.env.VITE_API_URL || 'http://localhost:4000') + '/api'
+  BASE_URL: 'https://bookseller-main.onrender.com',
+  API_URL: 'https://bookseller-main.onrender.com/api'
 };
 
 // Debug logging
 console.log('🔧 API Configuration Debug:');
-console.log('VITE_API_URL:', import.meta.env.VITE_API_URL);
+console.log('Using HARDCODED production URL');
 console.log('BASE_URL:', API_CONFIG.BASE_URL);
 console.log('API_URL:', API_CONFIG.API_URL);
-console.log('Environment check:', import.meta.env.MODE);
 
 export default API_CONFIG;
